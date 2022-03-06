@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="fr">
+	<head>
+		<meta charset="utf-8">
+		<title>La ville de Paris</title>
+		<link rel="stylesheet" type="text/css" href="./style.css">
+		<script type= "text/javascript" src="bouton.js"></script>
+	</head>
+	<body>
+		<div id="haut">
+		<h1>Guide touristique</h1>
+			<div id="pano"><p><abbr title="Par Jens Strauß — Travail personnel, CC BY-SA 4.0, https://commons.wikimedia.org/w/index.php?curid=73870380"><img src="Pano_Paris.jpg" width=100% alt="pano paris"</p></div></abbr>
+			
+			<div id="menu">
+				<div class="titremenu">
+					<p><a href="Culture et patrimoine.html">Patrimoine</a></p>
+				</div>
+				<div class="titremenu">
+					<p><a href="Histoire.html">Histoire</a></p>
+				</div>
+				<div class="titremenu">
+					<p><a href="Guide touristique.html">A visiter</a></p>
+				</div>
+				<div class="titremenu">
+					<p><a href="Paris.html">Accueil</a></p >
+				</div>
+				<a href="https://www.paris.fr/" class="titremenu" id="tour" target="_blank"> <img src="toureiffel.jpg" alt="logo" height="70px"></a>
+			</div>
+		</div>
+
+		<div id="rectangle">
+			<div class="texte">
+			<h2>Plan de la ville</h2><br />
+			<img src="plan ville paris.jpg" alt="plan_de_la_ville" width="100%"><br />
+			<br />
+			<p>En 2017 elle est classée comme étant la ville la plus élégante au monde.<br />
+			Surnommée la Ville Lumière, elle abrite de nombreux monuments et est l'une des villes les plus visitées au monde.<br />
+			Les multiples aéroports et gares de Paris permettent à la ville d'attirer un grand nombre de touristes étrangers et favorisent le commerce national et international.<br />
+			Voici une sélection des monuments les plus connus et plus importants de la capitale :<br /></p>
+		
+		</div>
+			
+			<script language="javascript" type="text/javascript">
+				var supported = (document.getElementById || document.all);
+				if (supported)
+				{
+				document.write("<STYLE TYPE='text/css'>" );
+				document.write(".para {display: none}" );
+				document.write("</STYLE>" );
+				var max = 9;
+				var shown = new Array();
+				for (var i=1;i<=max;i++)
+				{
+				 shown[i+1] = false;
+				}
+				}
+				function blocking(i)
+				{
+				if (!supported)
+				{
+				 alert('This link does not work in your browser.');
+				 return;
+				}
+				shown[i] = (shown[i]) ? false : true;
+				current = (shown[i]) ? 'block' : 'none';
+				if (document.getElementById)
+				{
+				 document.getElementById('number'+i).style.display = current;
+				}
+				else if (document.all)
+				{
+				 document.all['number'+i].style.display = current;
+				}
+				}
+				</script>
+				
+				<P CLASS="head">
+				<A HREF="#" onClick="blocking(1); return false"><li>La cathédrale Notre-Dame</li></A></P>
+				<P CLASS="para" ID="number1">
+				<abbr title="Par Zuffe — Travail personnel, CC BY-SA 3.0, https://commons.wikimedia.org/w/index.php?curid=78061649"><a href="https://fr.wikipedia.org/wiki/Cath%C3%A9drale_Notre-Dame_de_Paris" target="_blank"><img src="Notre_Dame_de_Paris2.jpg" alt="Notre_Dame" width="100%"></a></abbr>
+				</P>
+				<P CLASS="head">
+				<A HREF="#" onClick="blocking(2); return false"><li>Le musée du Louvre</li></A></P>
+				<P CLASS="para" ID="number2">
+				<abbr title="Ieoh Ming Peï © 2019 musée du Louvre © Nicolas Guiraud"><a href="https://fr.wikipedia.org/wiki/Mus%C3%A9e_du_Louvre" target="_blank"><img src="louvre-vue-de-la-pyramide.jpg" alt="Louvre" width="100%"></a></abbr>
+				</P>
+				<P CLASS="head">
+				<A HREF="#" onClick="blocking(3); return false"><li>La Tour Eiffel</li></A></P>
+				<P CLASS="para" ID="number3">
+				<abbr title="Par NonOmnisMoriar — Travail personnel, CC BY-SA 3.0, https://commons.wikimedia.org/w/index.php?curid=16015914"><a href="https://fr.wikipedia.org/wiki/Tour_Eiffel" target="_blank"><img src="Eiffel_tower_from_trocadero.jpg" alt="Tour_Eiffel" width="100%"></a></abbr>
+				</P>
+				<P CLASS="head">
+				<A HREF="#" onClick="blocking(4); return false"><li>L'Arc de Triomphe</li></A></P>
+				<P CLASS="para" ID="number4">
+				<abbr title="Par Jiuguang Wang — Flickr: Arc de Triomphe, CC BY-SA 2.0, https://commons.wikimedia.org/w/index.php?curid=33787667"><a href="https://fr.wikipedia.org/wiki/Arc_de_triomphe_de_l%27%C3%89toile" target="_blank"><img src="Arc_de_Triomphe.jpg" alt="Arc_de_Triomphe" width="100%"></a></abbr>
+				</P>
+				<P CLASS="head">
+				<A HREF="#" onClick="blocking(5); return false"><li>L'Opéra Garnier</li></A></P>
+				<P CLASS="para" ID="number5">
+				<abbr title="Par Alexander Hoernigk — Travail personnel, CC BY 3.0, https://commons.wikimedia.org/w/index.php?curid=48031324"><a href="https://fr.wikipedia.org/wiki/Op%C3%A9ra_Garnier" target="_blank"><img src="Paris_Palais_Garnier.jpg" alt="Palais_Garnier" width="100%"></a></abbr>
+				</P>
+				<P CLASS="head">
+				<A HREF="#" onClick="blocking(6); return false"><li>La basilique du Sacré-Cœur de Montmartre</li></A></P>
+				<P CLASS="para" ID="number6">
+				<abbr title="Auteur inconnu"><a href="https://fr.wikipedia.org/wiki/Basilique_du_Sacr%C3%A9-C%C5%93ur_de_Montmartre" target="_blank"><img src="La-Basilique-du-sacré-coeur-Montmartre.jpg" alt="le_sacré_coeur" width="100%"></a></abbr>
+				</P>
+				<P CLASS="head">
+				<A HREF="#" onClick="blocking(7); return false"><li>Le château de Versailles</li></A></P>
+				<P CLASS="para" ID="number7">
+				<abbr title="Par ToucanWings — Travail personnel, CC BY-SA 3.0, https://commons.wikimedia.org/w/index.php?curid=28506008"><a href="https://fr.wikipedia.org/wiki/Ch%C3%A2teau_de_Versailles" target="_blank"><img src="Versailles.jpg" alt="le_chateau_de_versailles" width="100%"></a></abbr>
+				</P>
+				<P CLASS="head">
+				<A HREF="#" onClick="blocking(8); return false"><li>Le musée d'Orsay</li></A></P>
+				<P CLASS="para" ID="number8">
+				<abbr title="Par Daniel Vorndran / DXR, CC BY-SA 3.0, https://commons.wikimedia.org/w/index.php?curid=31953569"><a href="https://fr.wikipedia.org/wiki/Mus%C3%A9e_d%27Orsay" target="_blank"><img src="Musée_d'Orsay.jpg" alt="le_musee_d-orsay" width="100%"></a></abbr>
+				</P>
+				<P CLASS="head">
+				<A HREF="#" onClick="blocking(9); return false"><li>Le jardin des Tuileries</li></A></P>
+				<P CLASS="para" ID="number9">
+				<abbr title="Marcaux/Getty Images"><a href="https://fr.wikipedia.org/wiki/Jardin_des_Tuileries" target="_blank"><img src="tuileries-garden.jpg" alt="les_tuileries" width="100%"></a></abbr>
+				</P>
+		</div>
+	</body>
